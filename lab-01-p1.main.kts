@@ -13,3 +13,5 @@ fun perfectSquare(num: Int): Int {
 fun main() {
     println(perfectSquare(16))
 }
+
+main()
