@@ -6,20 +6,20 @@ import khoury.CapturedResult
 import khoury.EnabledTest
 import khoury.runEnabledTests
 
-/* Creates a student class and a student data type */
+// Creates a student class and a student data type
 data class Student (val fore: String, val mid: String, val last: String)
 
-/* Returns a nametag to be used in other functions */
+// Returns a nametag to be used in other functions
 fun getNametag(name: Student): String {
     return "${name.last.uppercase()}, ${name.fore} ${name.mid}"
 }
 
-/* Compares one student's score to another student's score */
+// Compares one student's score to another student's score
 fun getCardLength(student: Student): Int {
    return getNametag(student).length
 }
 
-/* Creates a pair of students */
+// Creates a pair of students
 fun StudentPair(first: Student, second: Student): Student {
     val firstLength = getCardLength(first)
     val secondLength = getCardLength(second)
@@ -45,7 +45,7 @@ fun testStudentPair(): Unit {
     testSame(StudentPair(ron, harry), 19, "Checking if the program properly returns that Harry's full name has the same length as Ron's")
 }
 
-/* Runs the program */
+// Runs the program
 fun main() {
     /* Let's create some student cards */
     val harry = Student("Harry", "James", "Potter")
