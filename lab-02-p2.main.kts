@@ -6,18 +6,18 @@ import khoury.CapturedResult
 import khoury.EnabledTest
 import khoury.runEnabledTests
 
-/* Error messages */
+// Error messages
 val nan = "Invalid input: input is not a number."
 val nir = "Invalid input: input is not in range."
 
-/* Alarm responses */
+// Alarm responses
 val early = "Slow your horses, Early Bird!"
 val late = "A nice time to sleep in!"
 
-/* User input */
+// User input
 val prompt = "Input when you would like to wake up in the morning between 1am and 11am: "
 
-/* Returns an alarm response based on a user's input */
+// Returns an alarm response based on a user's input
 fun wakeupTime(): Unit {
     println(prompt)
     val time = input().toIntOrNull()
@@ -60,7 +60,7 @@ fun testWakeupTime() {
     _test("11", late)
 }
 
-/* Runs the program */
+// Runs the program
 fun main() {
     testWakeupTime()
 }
